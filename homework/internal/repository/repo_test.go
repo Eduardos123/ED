@@ -6,7 +6,7 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 )
-
+//testing app*
 func TestAddUser(t *testing.T) {
 	NormalUser := models.User{1, "Test", "18", nil}
 	db, mock, err := sqlmock.New()
