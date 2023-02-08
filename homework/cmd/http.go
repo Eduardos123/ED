@@ -34,9 +34,9 @@ func main() {
 
 	r := chi.NewRouter()
 
-	r.Post("/create", users.Create)
-	r.Post("/make_friends", users.MakeFriends)
-	r.Put("/{id}", users.UpdateAge)
+	r.Post("/create", users.Create) //creating user
+	r.Post("/make_friends", users.MakeFriends) //make friends 
+	r.Put("/{id}", users.UpdateAge) //creating new age of user
 	r.Delete("/{id}", users.DeleteUser)
 	r.Get("/{id}", users.GetFriends)
 
